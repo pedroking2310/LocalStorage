@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="global">
+        <h1>Página de cadastro</h1>
+        <div class="container-register-carro">
+            <h3>Cadastro de carros</h3>
+            <input type="text" id="titulo" placeholder="Digite o título"><br>
+            <input type="text" id="nome" placeholder="Digite o nome"><br>
+            <input type="text" id="marca" placeholder="Digite a marca"><br>
+            <input type="number" id="placa" placeholder="Digite o final da placa"><br>
+            <button onclick="criaCarro()">Cadastrar</button>
+        </div>
+        <div class="container-exibe-carro" onclick="exibe()">
+            <h3>carros cadastrados</h3>
+            <p id="lista"></p>
+        </div>
+        <button class="logout" onclick="logout()">Deslogar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
